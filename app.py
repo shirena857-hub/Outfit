@@ -16,7 +16,7 @@ CANVAS_SIZE = (800, 800)
 BACKGROUND_MODE = 'cover'             
 
 def fetch_player_info(uid: str):
-    url = f"https://info-omega-five.vercel.app/accinfo?uid={uid}"
+    url = f"https://info-do3s.vercel.app/player-info?uid={uid}"
     try:
         resp = session.get(url, timeout=IMAGE_TIMEOUT)
         resp.raise_for_status()
