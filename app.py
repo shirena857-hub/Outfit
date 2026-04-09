@@ -21,7 +21,7 @@ BACKGROUND_MODE = 'cover'           # choose 'cover' or 'contain'
 def fetch_player_info(uid: str):
     if not uid:
         return None
-    player_info_url = f"https://info-op27vgcec-shirena857-hubs-projects.vercel.app/info?uid={uid}"
+    player_info_url = f"https://mafuuuu-info-api.vercel.app/mafu-info?uid={uid}"
     try:
         resp = session.get(player_info_url, timeout=IMAGE_TIMEOUT)
         resp.raise_for_status()
